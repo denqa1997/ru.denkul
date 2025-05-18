@@ -4,6 +4,9 @@
 #Idea files
 .idea
 selenide-allure-junit.iml
+target/
+build/
+allure-results/
 
 # Log file
 *.log
