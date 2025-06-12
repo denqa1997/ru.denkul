@@ -4,17 +4,17 @@ on: [push]
 
 jobs:
   test:
-    #где запускаем
     runs-on: ubuntu-latest
-    #что делаем
+
     steps:
-    #выкачиваем репозиторий
+      # Выкачиваем репозиторий
       - uses: actions/checkout@v4
-      #настриваем Java
+
+      # Настраиваем Java (исправленные отступы!)
       - uses: actions/setup-java@v4
         with:
-        distribution: 'zulu' # See 'Supported distributions' for available options
-        java-version: '21'
-        #запускаем тесты
-      - run: mvn clean test
+          distribution: 'zulu'  # Теперь с правильным отступом (2 пробела)
+          java-version: '21'
 
+      # Запускаем тесты
+      - run: mvn clean test
