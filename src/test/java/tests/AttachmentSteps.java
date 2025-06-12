@@ -13,7 +13,7 @@ import static tests.TestForAllure.*;
 
 public class AttachmentSteps {
     @Test
-    void testLambdaAttachments() {
+    void lambdaAttachmentsTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Открываю страницу github в интернете", () -> {
             open("https://github.com");
@@ -38,10 +38,9 @@ public class AttachmentSteps {
     }
 
     @Test
-    void testAnnotatedAttachments () {
+    void annotatedAttachmentsTest () {
         SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps webSteps = new WebSteps();
-
         webSteps.openMainPage();
         webSteps.searchForRepository();
         webSteps.clickOnRepositoryLink(REPOSITORY);

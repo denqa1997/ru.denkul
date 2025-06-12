@@ -12,12 +12,12 @@ public class LabelsTest {
     @Severity(SeverityLevel.BLOCKER)
     @Link(value = "Testing", url = "https://testing.github.com")
     @DisplayName("Проверка наличия pull-request в репозитории")
-    public void testStaticLabels () {
+    public void staticLabelsTest () {
 
     }
 
     @Test
-    public void testDynamicLabels () {
+    public void dynamicLabelsTest () {
         Allure.getLifecycle().updateTestCase(
                 t -> t.setName("Проверка наличия pull-request в репозитории")
         );

@@ -1,7 +1,6 @@
 package tests;
 
 import com.codeborne.selenide.WebDriverRunner;
-import com.codeborne.selenide.commands.TakeScreenshot;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.openqa.selenium.OutputType;
@@ -9,7 +8,6 @@ import org.openqa.selenium.TakesScreenshot;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.webdriver;
 import static tests.TestForAllure.*;
 
 public class WebSteps {

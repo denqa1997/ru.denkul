@@ -10,12 +10,12 @@
     <version>2.4</version>
     <properties>
         <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
-        <junit-platform-surefire-provider.version>1.3.2</junit-platform-surefire-provider.version>
         <aspectj.version>1.9.24</aspectj.version>
         <allure-junit5.version>2.29.0</allure-junit5.version>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.directory>${project.basedir}/target</project.build.directory>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -95,6 +95,12 @@
             <artifactId>allure-selenide</artifactId>
             <version>2.29.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.surefire/surefire-api -->
+        <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-api</artifactId>
+            <version>3.5.3</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -102,12 +108,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
                 <configuration>
+                    <forkCount>0</forkCount>
                     <testFailureIgnore>false</testFailureIgnore>
                     <argLine>
                         -Dallure.results.directory=${project.build.directory}/allure-results
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
-                    <systemProperties>
+                    <systemPropertyVariables>
                         <property>
                             <name>junit.jupiter.extensions.autodetection.enabled</name>
                             <value>true</value>
@@ -116,14 +123,9 @@
                             <name>allure.results.directory</name>
                             <value>${project.build.directory}/allure-results</value>
                         </property>
-                    </systemProperties>
+                    </systemPropertyVariables>
                 </configuration>
                 <dependencies>
-                    <dependency>
-                        <groupId>org.junit.platform</groupId>
-                        <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>${junit-platform-surefire-provider.version}</version>
-                    </dependency>
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjweaver</artifactId>

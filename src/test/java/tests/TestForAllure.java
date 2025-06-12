@@ -21,12 +21,12 @@ public class TestForAllure {
     public static final SelenideElement linkText = $(By.linkText("eroshenkoam/allure-example"));
     public static final SelenideElement pullRequestTab = $("#pull-requests-tab");
     public static final SelenideElement resultText = $(withText("#92"));
-    static final String REPOSITORY = "eroshenkoam/allure-example";
-    static final int PULL_REQUEST_NUMBER = 92;
+    public static final String REPOSITORY = "eroshenkoam/allure-example";
+    public static final int PULL_REQUEST_NUMBER = 92;
 
 
     @Test
-    void easyTestSelenideSeacrhOnGitHub() {
+    void easySelenideSeacrhOnGitHubTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         openSite();
         searchText();
@@ -38,7 +38,7 @@ public class TestForAllure {
     }
 
     @Test
-    void selenideSearchTestOnGitHubWithLambdaSteps() {
+    void selenideSearchOnGitHubWithLambdaStepsTest () {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Открываю страницу github в интернете", () -> {
             open("https://github.com");
@@ -62,7 +62,7 @@ public class TestForAllure {
     }
 
     @Test
-    void testAnnotatedStep () {
+    void annotatedStepTest () {
         SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps webSteps = new WebSteps();
 
