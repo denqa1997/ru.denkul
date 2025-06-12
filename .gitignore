@@ -6,7 +6,7 @@
 selenide-allure-junit.iml
 target/
 build/
-allure-results/
+target/allure-results/
 
 # Log file
 *.log
