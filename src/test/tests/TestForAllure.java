@@ -20,9 +20,9 @@ public class TestForAllure {
     public static final SelenideElement queryString = $("#query-builder-test");
     public static final SelenideElement linkText = $(By.linkText("eroshenkoam/allure-example"));
     public static final SelenideElement pullRequestTab = $("#pull-requests-tab");
-    public static final SelenideElement resultText = $(withText("#91"));
+    public static final SelenideElement resultText = $(withText("#92"));
     static final String REPOSITORY = "eroshenkoam/allure-example";
-    static final int PULL_REQUEST_NUMBER = 91;
+    static final int PULL_REQUEST_NUMBER = 92;
 
 
     @Test
