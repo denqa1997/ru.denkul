@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.attachment;
 import static io.qameta.allure.Allure.step;
 import static tests.TestForAllure.*;
 
-public class AttachmentSteps {
+public class AttachmentStepsTests {
     @Test
     void lambdaAttachmentsTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
