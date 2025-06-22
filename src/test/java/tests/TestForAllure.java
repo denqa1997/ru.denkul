@@ -2,9 +2,6 @@ package tests;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.logevents.SelenideLogger;
-
-import static io.qameta.allure.Allure.step;
-
 import io.qameta.allure.Step;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
@@ -14,8 +11,9 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 
-public class TestForAllure {
+public class TestForAllure extends BaseTest {
     public static final SelenideElement searchInputText = $(".header-search-button");
     public static final SelenideElement queryString = $("#query-builder-test");
     public static final SelenideElement linkText = $(By.linkText("eroshenkoam/allure-example"));
