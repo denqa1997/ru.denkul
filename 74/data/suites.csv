@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7206","annotatedAttachmentsTest()","","Sun Jun 29 09:37:50 GMT 2025","passed","Sun Jun 29 09:37:57 GMT 2025","","tests.AttachmentStepsTests","tests.AttachmentStepsTests","annotatedAttachmentsTest"
+"","10305","easySelenideSeacrhOnGitHubTest()","","Sun Jun 29 09:37:25 GMT 2025","passed","Sun Jun 29 09:37:35 GMT 2025","","tests.TestForAllure","tests.TestForAllure","easySelenideSeacrhOnGitHubTest"
+"","2","Проверка наличия pull-request в репозитории","","Sun Jun 29 09:37:50 GMT 2025","passed","Sun Jun 29 09:37:50 GMT 2025","","tests.LabelsTest","tests.LabelsTest","dynamicLabelsTest"
+"","1","Проверка наличия pull-request в репозитории","","Sun Jun 29 09:37:50 GMT 2025","passed","Sun Jun 29 09:37:50 GMT 2025","","tests.LabelsTest","tests.LabelsTest","staticLabelsTest"
+"","7126","annotatedStepTest()","","Sun Jun 29 09:37:43 GMT 2025","passed","Sun Jun 29 09:37:50 GMT 2025","","tests.TestForAllure","tests.TestForAllure","annotatedStepTest"
+"","7282","selenideSearchOnGitHubWithLambdaStepsTest()","","Sun Jun 29 09:37:35 GMT 2025","passed","Sun Jun 29 09:37:43 GMT 2025","","tests.TestForAllure","tests.TestForAllure","selenideSearchOnGitHubWithLambdaStepsTest"
+"","7023","lambdaAttachmentsTest()","","Sun Jun 29 09:37:57 GMT 2025","passed","Sun Jun 29 09:38:04 GMT 2025","","tests.AttachmentStepsTests","tests.AttachmentStepsTests","lambdaAttachmentsTest"
